@@ -55,7 +55,6 @@ CONFIG_TARGET_ROOTFS_PARTSIZE=512
 CONFIG_PACKAGE_dnsmasq-full=y
 
 CONFIG_PACKAGE_luci=y
-
 CONFIG_PACKAGE_luci-app-openvpn=y
 CONFIG_PACKAGE_luci-app-openvpn-server=y
 CONFIG_PACKAGE_luci-app-ssr-plus=y
@@ -66,8 +65,10 @@ CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
+# The above is the default config try not to modified it
 
 # 以下为可选配置
+# Addition option
 # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
 # CONFIG_PACKAGE_luci-app-aria2 is not set
 # CONFIG_PACKAGE_luci-app-dockerman is not set
