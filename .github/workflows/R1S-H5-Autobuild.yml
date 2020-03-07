@@ -67,6 +67,11 @@ jobs:
           # ln -s /mnt/openwrt/feeds ./feeds
           # ln -s /mnt/openwrt/staging_dir ./staging_dir               
           cp -r ../../lede/package/lean package/
+          cp -r ../../lede/tools/upx ./tools
+          cp -r ../../lede/tools/ucl ./tools
+          sed --in-place 's/tools-y += mtools dosfstools libressl/tools-y += mtools dosfstools libressl upx ucl/' friendlywrt/tools/Makefile
+          sed --in-place 's/# builddir dependencies/$(curdir)\/upx\/compile := $(curdir)\/ucl\/compile/' friendlywrt/tools/Makefile
+          cp -r ../../lede/package/libs/librpc package/libs/
           cp -f ../../lede/feeds.conf.default ./feeds.conf.default 
           sed -i 's/dnsmasq /dnsmasq-full default-settings luci /' include/target.mk 
 
