@@ -73,7 +73,6 @@ jobs:
           sed --in-place 's/# builddir dependencies/$(curdir)\/upx\/compile := $(curdir)\/ucl\/compile/' friendlywrt/tools/Makefile
           cp -r ../../lede/package/libs/librpc package/libs/
           cp -f ../../lede/feeds.conf.default ./feeds.conf.default 
-          sed -i 's/dnsmasq /dnsmasq-full default-settings luci /' include/target.mk 
 
       - name: Update and install feeds
         run: |
