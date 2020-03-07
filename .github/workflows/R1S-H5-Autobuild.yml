@@ -100,6 +100,7 @@ jobs:
         if: always()
         run: |
           cd friendlywrt-h5
+          # sed --in-place 's/make -j$(nproc) V=s/make -j1 V=s/' ./scripts/mk-friendlywrt.sh
           echo "Start building..."
           ./build.sh nanopi_r1s.mk
 
