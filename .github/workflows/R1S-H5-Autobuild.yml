@@ -67,6 +67,7 @@ jobs:
           # ln -s /mnt/openwrt/feeds ./feeds
           # ln -s /mnt/openwrt/staging_dir ./staging_dir               
           cp -r ../../lede/package/lean package/
+          cp -f ../../lede/feeds.conf.default ./feeds.conf.default 
           sed -i 's/dnsmasq /dnsmasq-full default-settings luci /' include/target.mk 
 
       - name: Update and install feeds
