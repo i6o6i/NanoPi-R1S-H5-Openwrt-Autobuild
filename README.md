@@ -1,3 +1,8 @@
+## 项目迁移
+
+1. 这个repo由于名字太长，编译uclibs会出现[No such file or directory这个错误](https://github.com/coolsnowwolf/lede/issues/4192#issuecomment-609736953)
+2. 现已转到[NanoR1s](https://github.com/i6o6i/NanoR1s)
+
 <p align=center>
   <br>
   <span>NanoPi R1S-H5 OpenWrt Autobuild</span>
@@ -17,6 +22,7 @@
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license">License</a>
 </p>
+
 
 
 
